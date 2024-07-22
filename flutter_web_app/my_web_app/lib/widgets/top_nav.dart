@@ -10,10 +10,7 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               children: [
                 Container(
                   padding: const EdgeInsets.only(left: 14),
-                  child: Image.asset(
-                    "assets/icons/thy_logo.png",
-                    width: 28,
-                  ),
+                  child: Image.asset("assets/icons/thy_logo.png", width: 28),
                 )
               ],
             )
@@ -28,7 +25,7 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
         children: [
           Visibility(
             child: CustomText(
-                text: "Rapor",
+                text: "Overview",
                 color: lightGrey,
                 size: 20,
                 weight: FontWeight.bold),
@@ -79,7 +76,9 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
           ),
           Container(
               decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(30)),
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(30),
+              ),
               child: Container(
                 padding: const EdgeInsets.all(2),
                 margin: const EdgeInsets.all(2),
@@ -91,5 +90,5 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
         ],
       ),
       iconTheme: IconThemeData(color: dark),
-      backgroundColor: Colors.transparent,
+      backgroundColor: light,
     );
